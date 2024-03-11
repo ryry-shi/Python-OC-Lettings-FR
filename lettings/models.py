@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinLengthValidator
 
+
 class Address(models.Model):
     class Meta:
         db_table = 'oc_lettings_site_address'
@@ -18,7 +19,7 @@ class Address(models.Model):
 
 class Letting(models.Model):
     class Meta:
-        db_table = 'oc_lettings_site_letting'    
+        db_table = 'oc_lettings_site_letting'
     title = models.CharField(max_length=256)
     address = models.OneToOneField(Address, on_delete=models.CASCADE)
 
