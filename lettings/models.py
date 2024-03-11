@@ -5,6 +5,7 @@ from django.core.validators import MaxValueValidator, MinLengthValidator
 class Address(models.Model):
     class Meta:
         db_table = 'oc_lettings_site_address'
+        verbose_name_plural = 'addresses'
 
     number = models.PositiveIntegerField(validators=[MaxValueValidator(9999)])
     street = models.CharField(max_length=64)
