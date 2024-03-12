@@ -13,7 +13,8 @@ handler500 = views.server_error_view
 
 
 def trigger_error(request):
-    division_by_zero = 1 / 0
+    division_by_zero = 1 / 0 # noqa
+
 
 urlpatterns = [
     path('', views.index, name='index'),
