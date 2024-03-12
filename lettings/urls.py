@@ -1,5 +1,5 @@
 """
-    A module for routing to lettings application views 
+    A module for routing to lettings application views
 """
 from django.urls import path
 

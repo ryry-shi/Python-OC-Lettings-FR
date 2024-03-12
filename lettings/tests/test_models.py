@@ -6,8 +6,14 @@ class LettingModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
-        address = Address.objects.create(number='8', street="rue", city="stchamand",
-        state="avignon", zip_code="84000", country_iso_code="country")
+        address = Address.objects.create(
+            number='8',
+            street="rue",
+            city="stchamand",
+            state="avignon",
+            zip_code="84000",
+            country_iso_code="country"
+        )
         Letting.objects.create(title='Big', address=address)
 
     def test_title_label(self):
@@ -42,8 +48,14 @@ class AddressModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up non-modified objects used by all test methods
-        address = Address.objects.create(number=8, street="rue",
-        city="stchamand", state="avignon", zip_code="84000", country_iso_code="country")
+        address = Address.objects.create(
+            number=8,
+            street="rue",
+            city="stchamand",
+            state="avignon",
+            zip_code="84000",
+            country_iso_code="country"
+        )
         Letting.objects.create(title='Big', address=address)
 
     def test_number_label(self):

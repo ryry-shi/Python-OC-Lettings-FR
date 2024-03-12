@@ -31,6 +31,6 @@ class ProfileModelTest(TestCase):
         profile = Profile.objects.get(id=1)
         self.assertEqual(profile.favorite_city, "favorite")
 
-    def test_number_type(self):
+    def test_favorite_city_type(self):
         favorite_city_type = Profile._meta.get_field("favorite_city").get_internal_type()
         self.assertEqual(favorite_city_type, 'CharField')
