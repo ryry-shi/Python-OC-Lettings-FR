@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Profile(models.Model):
     """
-        A class to represent a user profile 
+        A class to represent a user profile
     """
     class Meta:
         db_table = 'oc_lettings_site_profile'

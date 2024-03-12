@@ -7,7 +7,7 @@ from django.core.validators import MaxValueValidator, MinLengthValidator
 
 class Address(models.Model):
     """
-        A class to represent a postal address 
+        A class to represent a postal address
     """
     class Meta:
         db_table = 'oc_lettings_site_address'

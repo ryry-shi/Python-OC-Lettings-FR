@@ -1,5 +1,5 @@
 """
-    A module for routing to profiles application views 
+    A module for routing to profiles application views
 """
 
 from django.urls import path
