@@ -1,5 +1,5 @@
 """
-    A module for routing to oc_lettings_views application views 
+    A module for routing to oc_lettings_views application views
 """
 
 from django.contrib import admin
