@@ -1,7 +1,6 @@
 import os
 
 from pathlib import Path
-from sentry_sdk.integrations.django import DjangoIntegration
 
 import sentry_sdk
 
