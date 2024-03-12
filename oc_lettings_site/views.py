@@ -10,3 +10,11 @@ from django.shortcuts import render
 # iaculis enim cursus in. Praesent volutpat porttitor magna, non finibus neque cursus id.
 def index(request):
     return render(request, 'index.html')
+
+
+def page_not_found_view(request, *args, **kwargs):
+    return render(request, '404.html', status=404)
+
+
+def server_error_view(request, *args, **kwargs):
+    return render(request, '500.html', status=500)
