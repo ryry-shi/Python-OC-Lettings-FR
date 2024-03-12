@@ -1,3 +1,6 @@
+"""
+    views module for lettings application
+"""
 from django.shortcuts import render
 from .models import Letting
 
@@ -9,6 +12,9 @@ from .models import Letting
 # ipsum primis in faucibus orci luctus et ultrices
 # posuere cubilia curae; Cras eget scelerisque
 def index(request):
+    """
+        view used as index for lettings app
+    """
     lettings_list = Letting.objects.all()
     context = {'lettings_list': lettings_list}
     return render(request, 'lettings/index.html', context)
@@ -27,6 +33,9 @@ def index(request):
 # Mauris condimentum auctor elementum. Donec quis nisi ligula.
 # Integer vehicula tincidunt enim, ac lacinia augue pulvinar sit amet.
 def letting(request, letting_id):
+    """
+        view used as letting page for lettings app
+    """
     letting = Letting.objects.get(id=letting_id)
     context = {
         'title': letting.title,

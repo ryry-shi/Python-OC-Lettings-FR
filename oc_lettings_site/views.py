@@ -1,3 +1,7 @@
+"""
+    views module for oc_lettings_site application
+"""
+
 from django.shortcuts import render
 
 

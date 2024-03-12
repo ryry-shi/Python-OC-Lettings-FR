@@ -1,8 +1,14 @@
+"""
+    models module for lettings application
+"""
 from django.db import models
 from django.core.validators import MaxValueValidator, MinLengthValidator
 
 
 class Address(models.Model):
+    """
+        A class to represent a postal address 
+    """
     class Meta:
         db_table = 'oc_lettings_site_address'
         verbose_name_plural = 'addresses'
@@ -19,6 +25,9 @@ class Address(models.Model):
 
 
 class Letting(models.Model):
+    """
+        A class to represent a letting of property
+    """
     class Meta:
         db_table = 'oc_lettings_site_letting'
     title = models.CharField(max_length=256)
