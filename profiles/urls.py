@@ -1,3 +1,7 @@
+"""
+    A module for routing to profiles application views 
+"""
+
 from django.urls import path
 
 from . import views

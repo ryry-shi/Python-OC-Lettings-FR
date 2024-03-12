@@ -1,3 +1,6 @@
+"""
+    A module for routing to lettings application views 
+"""
 from django.urls import path
 
 from . import views
