@@ -35,8 +35,11 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: environnement
-      run: echo $DJANGO_SECRET_KEY
+      run: echo ! $DJANGO_SECRET_KEY !
     - name: Test with pytest
+      env: |
+        DJANGO_DEBUG: False
+        DJANGO_SECRET_KEY: 'fp$9^593hsriajg$_%=5trot9g!1qa@ew(o-1#@=&4%=hp46(s'
       run: |
         pytest
     - name: Build coverage
