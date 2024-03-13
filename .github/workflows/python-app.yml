@@ -38,8 +38,8 @@ jobs:
       run: |
         pytest
       env: |
-        DJANGO_DEBUG: 'False'
-        DJANGO_SECRET_KEY: 'fp$9^593hsriajg$_%=5trot9g!1qa@ew(o-1#@=&4%=hp46(s'
+        DJANGO_DEBUG: False
+        DJANGO_SECRET_KEY: fp$9^593hsriajg$_%=5trot9g!1qa@ew(o-1#@=&4%=hp46(s
     - name: Build coverage
       run: |
         coverage run -m pytest
