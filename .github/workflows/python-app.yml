@@ -39,7 +39,7 @@ jobs:
     - name: Test with pytest
       env: 
         DJANGO_DEBUG: 'False'
-        DJANGO_SECRET_KEY: 'fp$9^593hsriajg$_%=5trot9g!1qa@ew(o-1#@=&4%=hp46(s'
+        DJANGO_SECRET_KEY: var.DJANGO_SECRET_KEY
       run: |
         pytest
     - name: Build coverage
