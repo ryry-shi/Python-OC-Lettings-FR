@@ -40,6 +40,11 @@ jobs:
           echo ! {d} !
           echo DJANGO_SECRET_KEY.$DJANGO_SECRET_KEY
           echo VAR_DJANGO_SECRET_KEY.$VAR_DJANGO_SECRET_KEY
+          echo DJANGO_SECRET_KEY
+          echo VAR_DJANGO_SECRET_KEY
+          echo d
+          echo "DJANGO_SECRET_KEY.$DJANGO_SECRET_KEY"
+          echo "VAR_DJANGO_SECRET_KEY.$VAR_DJANGO_SECRET_KEY"
 
     - name: Test with pytest
       env: 
