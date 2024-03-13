@@ -36,9 +36,14 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        coverage run -m pytest
-    - name: Test coverage
+        pytest
+    - name: Build coverage
       run: |
-        coverage report -m
-      
+        coverage run -m pytest
+        coverage xml
+    - name: Test coverage
+      uses: themichaelhall/check-code-coverage@v2
+      with:
+        report: coverage.xml
+        required-percentage: 80
         
