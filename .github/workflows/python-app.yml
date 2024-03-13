@@ -36,6 +36,12 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: environnement
       run: echo ! $DJANGO_SECRET_KEY !
+          echo ! var.$DJANGO_SECRET_KEY !
+          echo ! {d} !
+          echo "DJANGO_SECRET_KEY: $DJANGO_SECRET_KEY"
+          echo "VAR_DJANGO_SECRET_KEY: $VAR_DJANGO_SECRET_KEY"
+          echo "d: $d"
+
     - name: Test with pytest
       env: 
         DJANGO_DEBUG: 'False'
