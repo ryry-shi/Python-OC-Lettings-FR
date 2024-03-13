@@ -15,7 +15,7 @@ class ProfileModelTest(TestCase):
         """
             Set up non-modified objects used by all test methods
         """
-        user = User.objects.create(username="username", password="password")
+        user = User.objects.create(username="useaaaaaaaaaaarname", password="password")
         Profile.objects.create(user=user, favorite_city="favorite")
 
     def test_user_label(self):
