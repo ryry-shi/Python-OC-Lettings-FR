@@ -41,6 +41,6 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
     - name: push Docker image in AWS 
-      uses: aws ecr get-login-password --region region | docker login ryad364 AWS Gintama84!-stdin aws_account_id.dkr.ecr.region.amazonaws.com
+      uses: aws ecr get-login-password --region region | docker login AWS_USERNAME AWS AWS_PASSWORD-stdin aws_account_id.dkr.ecr.region.amazonaws.com
 
   
