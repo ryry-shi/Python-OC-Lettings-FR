@@ -39,7 +39,7 @@ jobs:
         DJANGO_DEBUG: 'False'
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
       run: |
-        pytest
+        python manage.py test
     - name: Build coverage
       run: |
         coverage run -m pytest
