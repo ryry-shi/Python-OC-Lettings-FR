@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint_and_test:
-    name: Lint and test
+    name: Linting, tests & tests coverage
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
