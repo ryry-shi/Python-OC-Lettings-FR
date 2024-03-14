@@ -43,7 +43,7 @@ jobs:
         coverage run ./manage.py test
     - name: Build coverage
       run: |
-        coverage xml
+        ./coverage xml
       env: 
         DJANGO_DEBUG: 'False'
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
