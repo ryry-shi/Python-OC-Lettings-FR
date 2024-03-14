@@ -40,10 +40,9 @@ jobs:
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
         DJANGO_SETTINGS_MODULE: oc_lettings_site.settings
       run: |
-        pytest
+        coverage run ./manage.py test
     - name: Build coverage
       run: |
-        coverage run ./manage.py test
         coverage xml
       env: 
         DJANGO_DEBUG: 'False'
