@@ -37,7 +37,7 @@ jobs:
     - name: Test with pytest
       env: 
         DJANGO_DEBUG: 'False'
-        DJANGO_SECRET_KEY: vars.DJANGO_SECRET_KEY
+        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
       run: |
         pytest
     - name: Build coverage

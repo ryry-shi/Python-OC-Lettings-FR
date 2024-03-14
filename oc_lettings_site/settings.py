@@ -123,7 +123,6 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 if not DEBUG:
     STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-
     # Sentry Django integration
     sentry_sdk.init(
         dsn=os.getenv("SENTRY_DSN"),
