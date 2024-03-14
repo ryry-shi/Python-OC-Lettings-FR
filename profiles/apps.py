@@ -5,8 +5,9 @@
 from django.apps import AppConfig
 
 
-class OCLettingsSiteConfig(AppConfig):
+class ProfilesConfig(AppConfig):
     """
         class used for app configuration
     """
-    name = 'oc_lettings_site'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "profiles"
