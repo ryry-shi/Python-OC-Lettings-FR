@@ -5,6 +5,7 @@ venv
 *.env
 /staticfiles
 /docs
+/doc
 .coverage
 coverage.xml
 pytest-coverage.txt
