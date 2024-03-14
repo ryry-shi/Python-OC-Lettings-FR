@@ -40,16 +40,7 @@ jobs:
         DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
         DJANGO_SETTINGS_MODULE: oc_lettings_site.settings
       run: |
-        coverage run ./manage.py test
-    - name: Build coverage
-      run: |
-        ./coverage xml
-      env: 
-        DJANGO_DEBUG: 'False'
-        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
-        DJANGO_SETTINGS_MODULE: oc_lettings_site.settings
+        pytest
     - name: Test coverage
-      uses: themichaelhall/check-code-coverage@v2
-      with:
-        report: coverage.xml
-        required-percentage: 80
+      run: pytest --cov="." --cov-fail-under=85
+s
