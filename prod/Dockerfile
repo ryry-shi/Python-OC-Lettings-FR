@@ -10,7 +10,7 @@ RUN addgroup --system app && adduser --system --group app
 
 RUN pip install --upgrade pip  
 
-COPY . /app
+COPY .. /app
 RUN chown -R app:app /app
 
 RUN pip install -r requirements-prod.txt
