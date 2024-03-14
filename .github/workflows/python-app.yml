@@ -43,3 +43,7 @@ jobs:
         pytest
     - name: Test coverage
       run: pytest --cov="." --cov-fail-under=85
+      env: 
+        DJANGO_DEBUG: 'False'
+        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+        DJANGO_SETTINGS_MODULE: oc_lettings_site.settings
