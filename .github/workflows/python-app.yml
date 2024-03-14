@@ -42,7 +42,7 @@ jobs:
         python manage.py test
     - name: Build coverage
       run: |
-        coverage run -m pytest
+        coverage run ./manage.py test
         coverage xml
     - name: Test coverage
       uses: themichaelhall/check-code-coverage@v2
