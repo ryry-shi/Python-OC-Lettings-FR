@@ -3,3 +3,9 @@
 venv
 *.sqlite3
 *.env
+/staticfiles
+/docs
+.coverage
+coverage.xml
+pytest-coverage.txt
+.coverage
