@@ -67,7 +67,7 @@ jobs:
 
   deploy_on_heroku:
     name: Deploy repo image to Heroku
-    need: push_to_registry
+    needs: push_to_registry
     runs_on: ubuntu_latest
     steps:
       - name: Build, Push and Deploy to Heroku
