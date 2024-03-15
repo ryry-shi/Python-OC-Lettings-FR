@@ -25,7 +25,6 @@ else:
 
 INSTALLED_APPS = [
     'oc_lettings_site.apps.OCLettingsSiteConfig',
-    'gunicorn',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -36,7 +35,7 @@ INSTALLED_APPS = [
     'lettings',
 ]
 if not DEBUG:
-    INSTALLED_APPS.append('whitenoise.runserver_nostatic')
+    INSTALLED_APPS.append('whitenoise.runserver_nostatic', 'gunicorn')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
