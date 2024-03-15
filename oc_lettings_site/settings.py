@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'lettings',
 ]
 if not DEBUG:
-    INSTALLED_APPS.append('whitenoise.runserver_nostatic', 'gunicorn')
+    INSTALLED_APPS+=['whitenoise.runserver_nostatic', 'gunicorn']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
