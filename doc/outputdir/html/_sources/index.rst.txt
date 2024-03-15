@@ -1,0 +1,21 @@
+.. oc-lettings-site documentation master file, created by
+   sphinx-quickstart on Thu Mar 14 20:44:25 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to oc-lettings-site's documentation!
+============================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   Usage
+   =====
+
+   ------------
+
+===================================
+ Description du projet
+ Application qui s'occupe d'afficher les biens immobilier ainsi que les profiles des utilisateurs
+   
+===================================
