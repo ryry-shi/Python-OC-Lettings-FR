@@ -20,7 +20,7 @@ DEBUG = os.getenv("DJANGO_DEBUG", False)
 if DEBUG:
     ALLOWED_HOSTS = ['localhost']
 else:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [

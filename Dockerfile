@@ -20,4 +20,4 @@ EXPOSE 8080
 
 USER app:app
 
-CMD gunicorn oc_lettings_site.wsgi:application -b 0.0.0.0:8080 --workers 4
+CMD gunicorn oc_lettings_site.wsgi:application -b 0.0.0.0:$PORT --workers 4
