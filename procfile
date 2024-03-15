@@ -1,1 +1,1 @@
-web: gunicorn --bind :8080 oc_lettings_site.wsgi
+web: gunicorn -b 0.0.0.0:$PORT oc_lettings_site.wsgi
